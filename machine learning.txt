@@ -1,0 +1,156 @@
+Day1:
+https://github.com/suyashi29/python-su/tree/master/ML   
+http://localhost:8888/notebooks/Desktop/lalitha/PythonLearning/Untitled.ipynb?kernel_name=python3
+
+Day 2:knn:
+https://github.com/suyashi29/python-su/blob/master/ML/Notebook/ML%20Introduction%20treating%20a%20DataSet.ipynb
+
+Day 3 Linear regression
+https://www.imurgence.com/home/blog/encoding-techniques-in-machine-learning-using-python
+https://github.com/suyashi29/python-su/blob/master/ML/Notebook/Linear%20Regression.ipynb
+https://github.com/lalitha1992/python-su/blob/master/Data%20Analysis%20using%20Python/Numpy%20for%20Simple%20Linear%20Regression.ipynb
+https://github.com/lalitha1992/python-su/blob/master/Labs/Lab%203-%20Simple%20Linear%20Regression.ipynb
+
+Day 4: Logistic regression
+Modelling Binary Logistic Regression Using Pyton :pythoncore-mlseupervised
+https://github.com/lalitha1992/python-su/tree/master/Python%20core/ML-Supervised
+Other files are also availabe here
+
+
+Supervised Learning-why is clearly known.input and output is available.so prediction can be checked
+Unsupervised Leaning-unlabelled data.No idea what to find from an information.Purpose is to convert unlabelled data to labelled data
+Reinforcement learning- with a feeback. Eg.game played multiple times.reward based system.
+
+Categorical- binary,multiple
+
+join multiple tabs
+drop duplicate columns
+drop columns with too many null values as nothing can be done with that useful
+fill with mean/median/some other values for columns with lesser number of null values
+
+mean(avg),median(middle value after arranging in asc order),mode(no of times a value occurs.the maximu of that)
+SD- deviation from mean value
+We can groupby a column and with respect to that see the value for others
+
+classification- to classify
+regression- trend increase or decrease
+clutering- its unsupervised learing
+
+knn- k nearest neighbours
+sleeping algorthimn
+woks only when anew point comes in
+Can be used for image classification. rarely used for regression.
+We already have many classes. When  a new point comes in we have toclassify into on of the classes listed.
+Euclavian method
+Find the distance between new oint nd all the points
+Select k no of points. choose a suitable k. if uchoose k=1,default it will be assigned to 1 point
+if 2  classes if you select k=2, then also chance of error
+If you select k=3,the nearest 3 points are taken.
+K= no of nearest points.Nearest point with more points is choosen as the class
+even/odd classification based on no of classes, choose k opposite
+ie., even classification, choose k=odd
+
+low value of k= overfitting
+k=sqrt(n) --- n is the no of data points
+variance- similaarity in data points unlike statistics
+hight variance-low bias
+low variance-high  bias
+bias-error(diff between act and predicted)
+
+In regressio insead of distance,mean is calculated instead of distance
+where distance cannot be calculated,hamming  distance is used
+color  and shape and size for fruits
+if no of favourbl point go  towards the categorizr,will be classifidto that class
+
+eg: colour=yellow and shape=round, might be mango
+check for diff k- model tuning
+standard for  =5
+k small-overfitting
+k big- under fitting
+
+X- featues
+A,B,C
+sepal
+petal
+Y- ouput
+
+test, train
+X train, Y train, X test, Y test
+test should contain all classes. through tuning,cross validation, model tuning to improve
+test=20
+train=80
+
+train and then test for accuracy
+
+
+1.normalize to 0 to 1(  when distancecalculated,will not look gud on graph.)-pre-step
+1,20,40
+x/xmax
+1/40,20/40,40/40
+
+to ompact data. will be  done on feature not  on target
+normalization one o  types of standardization
+
+A,B,C--- classes
+0,1,2
+
+import numpy
+np.array[X_test]
+
+treat data- fill missing values
+split data
+fit
+predict
+test	
+correlatin
+confusion matrix
+[TP  FP
+ FN  tn]
+algorithm tuning-iteration for selcting k
+
+a,b,c- 3 CONFUSON MATRIX
+
+a=TN+TP/ TP+TN+F+FN
+precision =tp/tp+fp
+recall =tp/tp+fn
+
+FP is more dangerous than FN  in example
+
+Methods to boost accuracy
+1.more data
+2.treat overleirs
+3.feature engneering-normalization
+4. feature selection
+5.multiple algorithms
+6.algorithm tuning- k value changed
+7. Ensemble methods- bagging.boosting
+8.Cross validation - differentiated test size,change test and train size to increase accuracy,k value changed
+
+One hot shot encoding
+
+Label Encoding
+
+Regression:
+
+simple regression:
+y=mx+c
+Linear - 
+straight line 
+all points   lie on straight line
+for negative line,m will be negative, if it is a line parallel to x axis y=c,slope=0
+Non-Linear
+
+logistic regreesion
+
+derived fom linear regression
+turns into sigmoid function
+for binary classification
+basic calclation is probablity function
+output>0.5 poitive <0.5 negative
+outcme is yes or no. dont use for multiclasses
+1/1+e^-y
+
+Dimesnsionality Reduion:
+by reducing no of columns
+correlated colunms combined to one- unsupervised learnin-pca- no info loss should be there though we are combing
+%variationexplained should be same
